@@ -11,6 +11,9 @@ const guestCount = document.querySelector(".attendance");
 // alert when guest list is full (not yet visible)
 const guestFull = document.querySelector(".alert");
 
+//variables for dish assignment
+const assignButton = document.querySelector(".assign");
+const assignedItems = document.querySelector(".assigned-items");
 
 //Make button listen for click
 //Make input appear on screen in list
@@ -51,3 +54,4 @@ const updateGuestCount = function() {
         guestFull.classList.remove("hide");
     }
 };
+
