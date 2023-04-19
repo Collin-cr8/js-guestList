@@ -22,10 +22,13 @@ addGuestButton.addEventListener("click", function() {
     let listItem = document.createElement("li");
     listItem.innerText = guest;
     guestList.append(listItem);
+    clearInput();
    }
 });
 
 
 //Auto clear the input box after submitting
 
-
+const clearInput = function() {
+    guestInput.value = "";
+};
