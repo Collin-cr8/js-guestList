@@ -83,6 +83,13 @@ const assignItems = function() {
         let listItem = document.createElement("li");
         listItem.innerText = `${guest.innerText} is bringing ${randomPotluckItem}.`;
 
-        assignItems.append(listItem);
+        assignedItems.append(listItem);
+        potluckItems.splice(randomPotluckIndex, 1);
      }
 };
+
+assignButton.addEventListener("click", function() {
+    assignItems();
+    //disable button from being used more than once
+    assignButton.disabled = true;
+});
