@@ -55,3 +55,9 @@ const updateGuestCount = function() {
     }
 };
 
+const assignItems = function() {
+    const potluckItems = ["potato salad", "sandwiches", "pasta salad", "fruit", "burgers",
+     "hot dogs", "meatballs", "chips", "watermelon", "veggie tray", "brownies", "cookies", 
+     "soda", "water", "beer"];
+
+};
